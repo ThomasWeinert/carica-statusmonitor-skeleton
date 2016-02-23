@@ -1,0 +1,1 @@
+# carica-statusmonitor-skeleton
