@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Carica Status Monitor - Skeleton</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="vendor/carica/statusmonitor/src/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/carica/statusmonitor/src/css/clock.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/carica/statusmonitor/src/css/effects/light.css"/>
+  </head>
+  <body>
+    <div id="pageHeader">
+      <h1>Carica Status Monitor</h1>
+    </div>
+    <div class="widgetGroups"
+         data-plugin="slides"
+         data-interval="30"
+         data-filter=".widgets">
+      <div class="widgets">
+        <div class="widget"
+             data-plugin="feed"
+             data-url="vendor/carica/statusmonitor/src/feeds/rss.php?url=http%3A%2F%2Frss.slashdot.org%2Fslashdot%2FslashdotMain%3Fformat%3Dxml"
+             data-max="10"
+             data-interval="3600">
+          <h2>Latest Changes</h2>
+        </div>
+      </div>
+    </div>
+    <div id="clock" class="digitsOnly" data-plugin="clock" data-weather="no"></div>
+    <script type="text/javascript" src="vendor/carica/statusmonitor/src/js/external/jquery.js"></script>
+    <script type="text/javascript" src="vendor/carica/statusmonitor/src/js/jquery.csm.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(
+        function() {
+          jQuery.CaricaStatusMonitor(
+            {
+              'basePath' : 'vendor/carica/statusmonitor/src/',
+              'locale' : 'de'
+            }
+          );
+        }
+      );
+    </script>
+  </body>
+</html>

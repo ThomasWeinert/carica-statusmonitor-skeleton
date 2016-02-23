@@ -1,0 +1,15 @@
+{
+  "name": "carica/statusmonitor-skeleton",
+  "description": "Skeleton project for your Carica Status Monitor",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Weinert",
+      "email": "thomas@weinert.info"
+    }
+  ],
+  "require": {
+    "carica/statusmonitor": "^0.1"
+  }
+}
